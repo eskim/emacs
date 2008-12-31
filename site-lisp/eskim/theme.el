@@ -2,9 +2,12 @@
 ;; color-theme
 ;;----------------------------------------------------------------------
 (require 'color-theme)
-(color-theme-initialize)
-;; (vendor 'color-theme-obsolescence)
-;; (color-theme-colorful-obsolescence)
+(when (fboundp 'color-theme-initialize)
+  (color-theme-initialize))
+(setq color-theme-is-global t)
+
+(load-file "~/.site-lisp/vendor/color-theme-obsolescence.el")
+(color-theme-colorful-obsolescence)
 
 (setq default-frame-alist '((font . "-apple-dejavu sans mono-medium-r-normal--12-120-72-72-m-120-iso10646-1")))
 

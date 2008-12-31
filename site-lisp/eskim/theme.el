@@ -3,8 +3,8 @@
 ;;----------------------------------------------------------------------
 (require 'color-theme)
 (color-theme-initialize)
-(load-library "color-theme-obsolescence")
-(color-theme-colorful-obsolescence)
+;; (vendor 'color-theme-obsolescence)
+;; (color-theme-colorful-obsolescence)
 
 (setq default-frame-alist '((font . "-apple-dejavu sans mono-medium-r-normal--12-120-72-72-m-120-iso10646-1")))
 

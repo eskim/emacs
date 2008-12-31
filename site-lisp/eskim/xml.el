@@ -1,6 +1,3 @@
-
-
-
 ;; ;;----------------------------------------------------------------------
 ;; ;; nxhtml
 ;; ;;----------------------------------------------------------------------
@@ -8,7 +5,7 @@
 ;; ;;     (define-key nxml-mode-map "\C-c\C-c" 'nxml-complete))
 
 ;;; nxml (HTML ERB template support)
-(load "~/.site-lisp/nxhtml/autostart.el")
+(load "~/.site-lisp/vendor/nxhtml/autostart.el")
 (setq
  mumamo-chunk-coloring 'submode-colored
  nxhtml-skip-welcome t

@@ -2,8 +2,8 @@
 ;; ;; emacs-rails / ruby
 ;; ;;----------------------------------------------------------------------
 ;; ;; (require 'rails)
-(require 'rcodetools)
-(require 'rinari)
+;; (require 'rcodetools)
+(vendor 'rinari)
 
 (setq rinari-tags-file-name "TAGS")
 

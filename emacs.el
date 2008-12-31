@@ -16,6 +16,7 @@
 
 
 (setq load-path (cons "~/.site-lisp" load-path))
+(add-to-list 'load-path "~/.site-lisp/vendor")
 
 
 
@@ -47,8 +48,8 @@
 (vendor 'recentf)
 (vendor 'anything)
 (vendor 'speedbar)
-(vendor 'ecb-autoloads)
-(vendor 'yasnippet-0.5.7)
+;; (vendor 'ecb-autoloads)
+;; (vendor 'yasnippet-0.5.7)
 
 ;; (yas/initialize)
 ;; (yas/load-directory "~/.site-lisp/yasnippet-0.5.7/snippets")

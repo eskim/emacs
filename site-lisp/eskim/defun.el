@@ -9,9 +9,9 @@
 ;; http://github.com/defunkt/emacs/tree/master/defunkt/defuns.el
 (defun vendor (library)
   (let* ((file (symbol-name library))
-         (normal (concat "~/.emacs.d/vendor/" file))
+         (normal (concat "~/.site-lisp/vendor/" file))
          (suffix (concat normal ".el"))
-         (eskim (concat "~/.emacs.d/eskim/" file)))
+         (eskim (concat "~/.site-lisp/eskim/" file)))
     (cond
      ((file-directory-p normal) (add-to-list 'load-path normal) (require library))
      ((file-directory-p suffix) (add-to-list 'load-path suffix) (require library))

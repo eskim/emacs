@@ -36,10 +36,11 @@
 (load "eskim/shell.el")
 (load "eskim/ido.el")
 (load "eskim/goodies.el")
+(load "eskim/xml.el")
 (load "eskim/proglang.el")
 (load "eskim/binding.el")
 (load "eskim/ruby.el")
-(load "eskim/xml.el")
+(load "eskim/slime.el")
 
 
 

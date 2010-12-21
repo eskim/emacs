@@ -40,8 +40,6 @@
 (load "eskim/proglang.el")
 (load "eskim/binding.el")
 (load "eskim/ruby.el")
-(load "eskim/slime.el")
-
 
 
 

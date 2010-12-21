@@ -9,8 +9,8 @@
 (load-file "~/.site-lisp/vendor/color-theme-obsolescence.el")
 (color-theme-colorful-obsolescence)
 
-(setq default-frame-alist '((font . "-apple-dejavu sans mono-medium-r-normal--12-120-72-72-m-120-iso10646-1")
-                            (width . 180) (height . 60)))
+(setq default-frame-alist
+      '((font . "-apple-dejavu sans mono-medium-r-normal--12-120-72-72-m-120-iso10646-1")))
 
 
 ;;----------------------------------------------------------------------

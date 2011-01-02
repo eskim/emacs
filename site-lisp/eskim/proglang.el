@@ -1,8 +1,28 @@
 ;;----------------------------------------------------------------------
-;; js2
+;; javascript
 ;;----------------------------------------------------------------------
-(autoload 'js2-mode "js2" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+;; (autoload 'javascript-mode "js2" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . javascript-mode))
+
+;;----------------------------------------------------------------------
+;; coffee mode
+;;----------------------------------------------------------------------
+(require 'coffee-mode)
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
+
+(defun coffee-custom ()
+  "coffee-mode-hook"
+ (set (make-local-variable 'tab-width) 2))
+
+(add-hook 'coffee-mode-hook
+  '(lambda() (coffee-custom)))
+;;----------------------------------------------------------------------
+;; haml / sass
+;;----------------------------------------------------------------------
+(require 'haml-mode)
+(require 'sass-mode)
+;; (add-hook 'haml-mode-hook 'set-newline-and-indent)
 
 
 ;; ;;----------------------------------------------------------------------
@@ -70,12 +90,6 @@
 ;; ; 	      (define-key erlang-shell-mode-map (car spec) (cadr spec)))))
 ;; ; 
 
-;; ;;----------------------------------------------------------------------
-;; ;; haml / sass
-;; ;;----------------------------------------------------------------------
-;; (require 'haml-mode)
-;; (require 'sass-mode)
-;; (add-hook 'haml-mode-hook 'set-newline-and-indent)
 
 
 ;; ;;----------------------------------------------------------------------

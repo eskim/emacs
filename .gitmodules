@@ -1,3 +1,6 @@
 [submodule "site-lisp/vendor/rinari"]
 	path = site-lisp/vendor/rinari
 	url = git://github.com/eschulte/rinari.git
+[submodule "site-lisp/vendor/twilight-emacs"]
+	path = site-lisp/vendor/twilight-emacs
+	url = https://github.com/crafterm/twilight-emacs.git

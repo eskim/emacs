@@ -56,3 +56,9 @@
         try-complete-lisp-symbol
         try-expand-whole-kill))
 
+(setq frame-title-format
+  '("" invocation-name ": "(:eval (if (buffer-file-name)
+                (abbreviate-file-name (buffer-file-name))
+                  "%b")) " [%*]"))
+
+

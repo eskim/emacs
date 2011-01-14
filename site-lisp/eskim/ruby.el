@@ -11,6 +11,13 @@
 (setq auto-mode-alist (cons '("\\.html\\.erb" . nxhtml-mode) auto-mode-alist))
 
 
+;; ----------------------------------------------------------------------
+;; Ruby
+;; ----------------------------------------------------------------------
+(add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile" . ruby-mode))
+
+
 ;; seems not work
 ;; (add-hook 'ruby-mode-hook
 ;;   (lambda()

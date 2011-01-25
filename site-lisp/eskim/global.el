@@ -20,7 +20,7 @@
 (setq ls-lisp-dirs-first t)             ;display dirs first in dired
 (setq x-select-enable-clipboard t)      ;use system clipboard
 (show-paren-mode 1)                     ;match parenthesis
-;(menu-bar-mode -1)                      ;hide menu-bar
+(menu-bar-mode -1)                      ;hide menu-bar
 (scroll-bar-mode -1)                    ;hide scroll-bar
 (tool-bar-mode -1)                      ;hide tool-bar
 (column-number-mode 1)                  ;show column number

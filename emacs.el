@@ -47,7 +47,7 @@
 (vendor 'wrap-region)
 (vendor 'recentf)
 (vendor 'anything)
-(vendor 'speedbar)
+;; (vendor 'speedbar)
 (vendor 'magit)
 ;; (vendor 'ecb-autoloads)
 ;; (vendor 'yasnippet-0.5.7)

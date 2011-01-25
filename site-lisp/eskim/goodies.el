@@ -47,17 +47,18 @@
 ;; tramp
 ;;----------------------------------------------------------------------
 (require 'tramp)
-;; (setq tramp-default-method "plink")
-;; (setq tramp-password-end-of-line "\r\n")
-;; (setq shell-prompt-pattern "^.&%")
-;; (setq tramp-verbose 10)
-;; (setq tramp-debug-buffer t)
-(setq tramp-sh-program "/bin/sh")
-(setq tramp-chunksize 500)
-;; (modify-coding-system-alist 'process "plink" 'utf-8)
-(setq tramp-default-method "ssh")
-(tramp-set-completion-function "ssh"
-  '((tramp-parse-hosts "/etc/hosts")))			      
+;; ;; (setq tramp-default-method "plink")
+;; ;; (setq tramp-password-end-of-line "\r\n")
+;; ;; (setq shell-prompt-pattern "^.&%")
+;; ;; (setq tramp-verbose 10)
+;; ;; (setq tramp-debug-buffer t)
+;; (setq tramp-sh-program "/bin/bash")
+(setq tramp-remote-sh "/bin/bash")
+;; (setq tramp-chunksize 500)
+;; ;; (modify-coding-system-alist 'process "plink" 'utf-8)
+;; (setq tramp-default-method "ssh")
+;; ;; (tramp-set-completion-function "ssh"
+;; ;;   '((tramp-parse-hosts "/etc/hosts")))			      
 
 
 ;;======================================================================

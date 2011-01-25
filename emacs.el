@@ -30,6 +30,7 @@
 
 (load "eskim/global.el")
 (load "eskim/defun.el")
+(load "eskim/pweet.el")
 (load "eskim/theme.el")
 (load "eskim/mail.el")
 (load "eskim/dired.el")

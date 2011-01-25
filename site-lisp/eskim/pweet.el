@@ -40,9 +40,6 @@
   :group 'pweet)
 
 
-
-
-
 (defconst pweet-base-path "/pweets.json")
 
 (defconst pweet-base-url
@@ -94,18 +91,23 @@
 
 (defun pweet-request-start (url)
   "pweet request start"
-  (let ((result nil)
-        (status nil)
-        (json nil))
+  (save-window-excursion
     (pweet-request-set-auth)
-    (save-window-excursion
-      (set-buffer (url-retrieve-synchronously url))
-      (setq status url-http-response-status)
-      (goto-char url-http-end-of-headers)
-      (setq json (json-read))
-      (setq result (list status json))
-      (kill-buffer (current-buffer)))
-    result))
+    (set-buffer (url-retrieve-synchronously url))
+      
+    (let ((status url-http-response-status)
+          (json nil))
+
+      (if pweet-debug-mode
+          (message (buffer-string)))
+
+      (if (and (>= status 200) (< status 300))
+          (progn
+            (goto-char url-http-end-of-headers)
+            (setq json (json-read))))
+
+      (kill-buffer (current-buffer))
+      (list status json))))
       
       
       

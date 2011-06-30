@@ -57,8 +57,9 @@
 ;; (setq tramp-chunksize 500)
 ;; ;; (modify-coding-system-alist 'process "plink" 'utf-8)
 ;; (setq tramp-default-method "ssh")
-;; ;; (tramp-set-completion-function "ssh"
-;; ;;   '((tramp-parse-hosts "/etc/hosts")))			      
+
+(tramp-set-completion-function "ssh"
+'((tramp-parse-sconfig "~/.ssh/config")))
 
 
 ;;======================================================================

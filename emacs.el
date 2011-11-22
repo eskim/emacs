@@ -63,3 +63,4 @@
 ;;              (setq yas/trigger-key
 ;;                    (kbd "<tab>")))) 
 
+(server-start)

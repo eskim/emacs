@@ -23,7 +23,7 @@
 ;; javascript
 ;;----------------------------------------------------------------------
 ;; (autoload 'javascript-mode "js2" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . javascript-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . espresso-mode))
 
 
 ;;---------------------------------------------------------------------

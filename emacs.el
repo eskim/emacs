@@ -19,6 +19,10 @@
 (add-to-list 'load-path "~/.site-lisp/vendor")
 
 
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(package-initialize)
 
 
 (if mswindows-p (add-to-list 'load-path "C:/Program Files/Emacs/EmacsW32/lisp"))

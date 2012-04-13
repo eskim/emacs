@@ -1,3 +1,7 @@
+ (setq mac-option-modifier 'super)
+ (setq mac-command-modifier 'meta)
+
+
 (global-set-key (kbd "C-c C-g p") 'pweet-post)
 (global-set-key "\C-xp" 'eskim-ido-find-project)
 (global-set-key "\C-xg" 'magit-status)

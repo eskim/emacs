@@ -1,24 +1,25 @@
-;;----------------------------------------------------------------------
-;; color-theme
-;;----------------------------------------------------------------------
-(require 'color-theme)
-;; (when (fboundp 'color-theme-initialize)
-;;   (color-theme-initialize))
-(setq color-theme-is-global t)
+;; ;;----------------------------------------------------------------------
+;; ;; color-theme
+;; ;;----------------------------------------------------------------------
+;; (require 'color-theme)
+;; (color-theme-initialize)
+;; ;; (when (fboundp 'color-theme-initialize)
+;; ;;   (color-theme-initialize))
+;; ;; (setq color-theme-is-global t)
 
-(load-file "~/.site-lisp/vendor/twilight-emacs/color-theme-twilight.el")
-;; (color-theme-colorful-obsolescence)
-(color-theme-twilight)
+;; (load-file "~/.site-lisp/vendor/twilight-emacs/color-theme-twilight.el")
+;; ;; (color-theme-colorful-obsolescence)
+;; (color-theme-twilight)
 
 
 
-(create-fontset-from-fontset-spec
- "-apple-dejavu sans mono-medium-r-normal--12-120-72-72-m-120-fontset-eskim,
- ascii:-apple-dejavu sans mono-medium-r-normal--12-120-72-72-m-120-iso10646-1,
- korean-ksc5601:-apple-applegothic-medium-r-normal--12-120-72-72-m-120-iso10646-1")
+;; (create-fontset-from-fontset-spec
+;;  "-apple-dejavu sans mono-medium-r-normal--12-120-72-72-m-120-fontset-eskim,
+;;  ascii:-apple-dejavu sans mono-medium-r-normal--12-120-72-72-m-120-iso10646-1,
+;;  korean-ksc5601:-apple-applegothic-medium-r-normal--12-120-72-72-m-120-iso10646-1")
 
-(setq default-frame-alist
-      '((font . "fontset-eskim")))
+;; (setq default-frame-alist
+;;       '((font . "fontset-eskim")))
 
 
 ;; (setq default-frame-alist
